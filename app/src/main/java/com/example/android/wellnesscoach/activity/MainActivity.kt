@@ -23,7 +23,7 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.lang.ref.WeakReference
 
 
-class MainActivity constructor() : AppCompatActivity(), View.OnClickListener {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityMainBinding
     private lateinit var googleSignInClient: GoogleSignInClient
     private val googleSignInViewModel: GoogleSignInViewModel by viewModel()
