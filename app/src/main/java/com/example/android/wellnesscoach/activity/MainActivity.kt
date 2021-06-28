@@ -16,6 +16,9 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.lang.ref.WeakReference
 
@@ -27,12 +30,16 @@ class MainActivity constructor() : AppCompatActivity(), View.OnClickListener {
     val mainActivityWeakReference: WeakReference<MainActivity> by lazy {
         WeakReference<MainActivity>(this);
     }
+    private lateinit var firebaseAnalytics: FirebaseAnalytics
+
     val RC_SIGN_IN = 200
     private lateinit var userName: String
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        firebaseAnalytics = Firebase.analytics
+
         binding.signInButton.setOnClickListener(this)
         binding.signOutButton.setOnClickListener(this)
         binding.goToMediaPage.setOnClickListener(this)
@@ -93,6 +100,7 @@ class MainActivity constructor() : AppCompatActivity(), View.OnClickListener {
                 binding.signOutButton.visibility = View.VISIBLE
                 binding.goToMediaPage.visibility = View.VISIBLE
                 userName = it.displayName.toString()
+                firebaseAnalytics.setUserProperty("user_email", it.email)
                 (getString(R.string.welcome) + " " + userName).also { binding.signInName.text = it }
             }
         })
