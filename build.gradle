@@ -3,7 +3,6 @@ buildscript {
     ext.kotlin_version = "1.5.10"
     ext.liveData_version = "2.3.1"
     ext.viewModel_version = "2.3.1"
-    ext.glide_version = "1.5.10"
     ext.koin_version = "2.1.6"
     ext.life_cycle_extensions_version = "2.2.0"
     ext.firebase_messaging_version = "22.0.0"
