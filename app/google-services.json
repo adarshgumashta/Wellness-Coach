@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "929854008246",
+    "project_id": "wellnesscoach-cdc83",
+    "storage_bucket": "wellnesscoach-cdc83.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929854008246:android:4e7a51aa736754ccbdaf17",
+        "android_client_info": {
+          "package_name": "com.example.android.wellnesscoach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929854008246-2rh0vckjlauf3hnhbvojih1dka4v01nv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.wellnesscoach",
+            "certificate_hash": "c61444a46490beabe0290a6d1e9c9d3ada6ffbcd"
+          }
+        },
+        {
+          "client_id": "929854008246-5bp622e061vqcujvv9jssspqm0u0nd82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEtfj_eoSTi8HcrvqpRToEtc-E2UnE284"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929854008246-5bp622e061vqcujvv9jssspqm0u0nd82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

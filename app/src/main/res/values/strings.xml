@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Wellness Coach</string>
+    <string name="app_notification_channel_id">App Default Channel</string>
+    <string name="play_audio">Play Audio</string>
+    <string name="play_video">Play Video</string>
+    <string name="please_sign_in">Please sign in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="sing_out_toast">Sign Out Completed</string>
+    <string name="go_to_media_page">GO TO MEDIA PAGE</string>
+    <string name="welcome">Welcome </string>
+    <string name="google_sign_in_failed">Google sign in failed:(</string>
+</resources>
